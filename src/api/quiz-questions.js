@@ -10,6 +10,20 @@ var quizQuestions = [
               type: "Over20",
               content: "Over $20"
           }
+      ],
+      result: [
+        {
+          type: "",
+          image: "",
+          link: "",
+          item: ""
+        },
+        {
+          type: "",
+          image: "",
+          link: "",
+          item: ""
+        }
       ]
   },
   {
@@ -23,6 +37,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Happy Hour - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Happy Hour - Over 20"
+        }
       ]
   },
   {
@@ -36,6 +64,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Late Meetings - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Late Meetings - Over 20"
+        }
       ]
   },
   {
@@ -49,6 +91,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Vegan - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Vegan - Over 20"
+        }
       ]
   },
   {
@@ -62,6 +118,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Music - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Music - Over 20"
+        }
       ]
   },
   {
@@ -75,6 +145,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Microwave - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Microwave - Over 20"
+        }
       ]
   },
   {
@@ -88,6 +172,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Water - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Water - Over 20"
+        }
       ]
   },
   {
@@ -101,6 +199,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "#fitness - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "#fitness - Over 20"
+        }
       ]
   },
   {
@@ -114,6 +226,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Memes - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Memes - Over 20"
+        }
       ]
   },
   {
@@ -127,6 +253,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Attack - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Attack - Over 20"
+        }
       ]
   },
   {
@@ -140,6 +280,20 @@ var quizQuestions = [
               type: "Next",
               content: "No"
           }
+      ],
+      result: [
+        {
+          type: "Under20",
+          image: "../img/00-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Patriarchy - Under 20"
+        },
+        {
+          type: "Over20",
+          image: "../img/01-test.jpg",
+          link: "http://www.seanwilkinson.me",
+          item: "Patriarchy - Over 20"
+        }
       ]
   }
 ];

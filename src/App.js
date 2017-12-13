@@ -29,6 +29,11 @@ class App extends Component {
         Sony: 0
       },
       result: '',
+      resultImage: '',
+      resultLink: '',
+      resultOptions:[],
+      under20Flag: 0,
+      over20Flag: 0,
       randomQuestions: this.shuffleArray(cloneArray)
     };
 
@@ -37,10 +42,12 @@ class App extends Component {
 
   componentWillMount() {
     const AnswerOptions = quizQuestions.map((question) => question.answers);
+    const ResultOptions = quizQuestions.map((question) => question.result);
 
     this.setState({
       question: quizQuestions[0].question,
-      answerOptions: AnswerOptions[0]
+      answerOptions: AnswerOptions[0],
+      resultOptions: ResultOptions[0]
     });
   }
 
@@ -80,33 +87,43 @@ class App extends Component {
     this.setState({
       counter: counter,
       questionId: questionId,
-      question: this.state.RandomisedQuestions[counter].question,
-      answerOptions: this.state.RandomisedQuestions[counter].answers,
+      question: this.state.randomQuestions[counter-1].question,
+      answerOptions: this.state.randomQuestions[counter-1].answers,
+      resultOptions: this.state.randomQuestions[counter-1].result,
       answer: ''
     });
   }
 
-  getResults() {
-     const answersCount = this.state.answersCount;
-     const answersCountKeys = Object.keys(answersCount);
-     const answersCountValues = answersCountKeys.map((key) => answersCount[key]);
-     const maxAnswerCount = Math.max.apply(null, answersCountValues);
-
-     return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
-   }
-
    setResults (result) {
-     if (result.length === 1) {
-       this.setState({ result: result[0] });
+     if (this.state.under20Flag === 1) {
+       console.log(this.state.resultOptions[0].image)
+       this.setState({ resultImage: this.state.resultOptions[0].image });
+       this.setState({ resultLink: this.state.resultOptions[0].link });
+       this.setState({ result: this.state.resultOptions[0].item });
      } else {
-       this.setState({ result: 'Undetermined' });
-     }
+       console.log(this.state.resultOptions[1].image)
+       this.setState({ resultImage: this.state.resultOptions[1].image });
+       this.setState({ resultLink: this.state.resultOptions[1].link });
+       this.setState({ result: this.state.resultOptions[1].item });
+     };
    }
 
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
     if (event.currentTarget.value === 'Gift') {
-        setTimeout(() => this.setResults(this.getResults()), 300);
+        setTimeout(() => this.setResults(this.state.resultOptions), 300);
+
+      } else if (this.state.questionId === quizQuestions.length) {
+        setTimeout(() => this.setResults(this.state.resultOptions), 300);
+
+      }else if (event.currentTarget.value === 'Under20') {
+        this.setState({ under20Flag: 1 });
+        setTimeout(() => this.setNextQuestion(), 300);
+
+      } else if (event.currentTarget.value === 'Over20') {
+        this.setState({ over20Flag: 1 });
+        setTimeout(() => this.setNextQuestion(), 300);
+
       } else {
         setTimeout(() => this.setNextQuestion(), 300);
       }
@@ -127,7 +144,7 @@ class App extends Component {
 
   renderResult() {
     return (
-      <Result quizResult={this.state.result} />
+      <Result quizResult={this.state.result} imgSrc={this.state.resultImage} shopLink={this.state.resultLink } />
     );
   }
 

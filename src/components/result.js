@@ -14,7 +14,9 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
         transitionAppearTimeout={500}
       >
         <div>
-          You prefer <strong>{props.quizResult}</strong>!
+          <img src={props.imgSrc}></img>
+          <div>We recommend <strong>{props.quizResult}</strong>!</div>
+          <div><a href={props.shopLink} >Buy</a></div>
         </div>
       </ReactCSSTransitionGroup>
     );
@@ -22,6 +24,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
   Result.propTypes = {
     quizResult: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    shopLink: PropTypes.string.isRequired
   };
 
   export default Result;
