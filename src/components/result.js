@@ -14,7 +14,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
         transitionAppearTimeout={500}
       >
         <div>
-          <img src={props.imgSrc}></img>
+          <img src={props.imgSrc} alt={props.quizResult}></img>
           <div>We recommend <strong>{props.quizResult}</strong>!</div>
           <div><a href={props.shopLink} >Buy</a></div>
         </div>

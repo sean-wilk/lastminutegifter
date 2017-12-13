@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
   function AnswerOption(props) {
     return (
-      <li className="answerOption">
+      <li className="btn btn-outline-primary">
         <input
           type="radio"
           className="radioCustomButton"

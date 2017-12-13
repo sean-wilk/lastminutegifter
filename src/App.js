@@ -5,8 +5,7 @@ import Quiz from './components/quiz';
 import quizQuestions from './api/quiz-questions';
 import Result from './components/result';
 
-import logo from './logo.svg';
-import './App.css';
+import logo from './img/BarkerLogo.png';
 
 
 class App extends Component {
@@ -23,11 +22,6 @@ class App extends Component {
       question: '',
       answerOptions: [],
       answer: '',
-      answersCount: {
-        Nintendo: 0,
-        Microsoft: 0,
-        Sony: 0
-      },
       result: '',
       resultImage: '',
       resultLink: '',
@@ -151,11 +145,17 @@ class App extends Component {
   render() {
       return (
         <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>React Quiz</h2>
+          <div>
+            <div className="Text"><h1 className="display-4">LAST MINUTE GIFTER</h1></div>
+            <div className="Text"><h4>For when you put off buying for your office gift exchange until the last possible second.</h4></div>
           </div>
+          <div>
             {this.state.result ? this.renderResult() : this.renderQuiz()}
+          </div>
+          <div>
+            <div className="Text"><h6 className="text-muted">We hope you have amazon prime. Love from,</h6></div>
+            <div className="Text"><img src={logo} className="logo" alt="logo" /></div>
+          </div>
         </div>
       )
     }
