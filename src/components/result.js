@@ -34,7 +34,7 @@ function Result(props) {
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
           id="buy-btn">
-          <a href={props.shopLink}>Buy</a>
+          <a href={props.shopLink} target="_blank">Buy</a>
         </button>
         <button
           type="button"
