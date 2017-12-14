@@ -1,3 +1,6 @@
+import image1 from '../img/test.png';
+import image2 from '../img/test2.jpg';
+
 var quizQuestions = [
   {
       question: "Spending Limit?",
@@ -41,15 +44,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 1,
           link: "http://www.seanwilkinson.me",
-          item: "Happy Hour - Under 20"
+          item: "Happy Hour - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 2,
           link: "http://www.seanwilkinson.me",
-          item: "Happy Hour - Over 20"
+          item: "Happy Hour - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -68,15 +75,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 3,
           link: "http://www.seanwilkinson.me",
-          item: "Late Meetings - Under 20"
+          item: "Late Meetings - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 4,
           link: "http://www.seanwilkinson.me",
-          item: "Late Meetings - Over 20"
+          item: "Late Meetings - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -95,15 +106,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 5,
           link: "http://www.seanwilkinson.me",
-          item: "Vegan - Under 20"
+          item: "Vegan - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 6,
           link: "http://www.seanwilkinson.me",
-          item: "Vegan - Over 20"
+          item: "Vegan - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -122,15 +137,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 7,
           link: "http://www.seanwilkinson.me",
-          item: "Music - Under 20"
+          item: "Music - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 8,
           link: "http://www.seanwilkinson.me",
-          item: "Music - Over 20"
+          item: "Music - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -149,15 +168,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 9,
           link: "http://www.seanwilkinson.me",
-          item: "Microwave - Under 20"
+          item: "Microwave - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 10,
           link: "http://www.seanwilkinson.me",
-          item: "Microwave - Over 20"
+          item: "Microwave - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -176,15 +199,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 11,
           link: "http://www.seanwilkinson.me",
-          item: "Water - Under 20"
+          item: "Water - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 12,
           link: "http://www.seanwilkinson.me",
-          item: "Water - Over 20"
+          item: "Water - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -203,15 +230,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 13,
           link: "http://www.seanwilkinson.me",
-          item: "#fitness - Under 20"
+          item: "#fitness - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 14,
           link: "http://www.seanwilkinson.me",
-          item: "#fitness - Over 20"
+          item: "#fitness - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -230,15 +261,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 15,
           link: "http://www.seanwilkinson.me",
-          item: "Memes - Under 20"
+          item: "Memes - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 16,
           link: "http://www.seanwilkinson.me",
-          item: "Memes - Over 20"
+          item: "Memes - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -257,15 +292,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 17,
           link: "http://www.seanwilkinson.me",
-          item: "Attack - Under 20"
+          item: "Attack - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 18,
           link: "http://www.seanwilkinson.me",
-          item: "Attack - Over 20"
+          item: "Attack - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   },
@@ -284,15 +323,19 @@ var quizQuestions = [
       result: [
         {
           type: "Under20",
-          image: "../img/00-test.jpg",
+          image: image1,
+          imageKey: 19,
           link: "http://www.seanwilkinson.me",
-          item: "Patriarchy - Under 20"
+          item: "Patriarchy - Under 20",
+          description: "Lorem ipsum sonar dolar words words"
         },
         {
           type: "Over20",
-          image: "../img/01-test.jpg",
+          image: image1,
+          imageKey: 20,
           link: "http://www.seanwilkinson.me",
-          item: "Patriarchy - Over 20"
+          item: "Patriarchy - Over 20",
+          description: "Lorem ipsum sonar dolar words words"
         }
       ]
   }

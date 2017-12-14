@@ -4,34 +4,38 @@
   box-sizing: border-box;
 }
 
-html, body, #root, .app, .app>div {
-  height: 100% !important
-}
-
 body {
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  height: 100% !important
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    min-width: 360px;
+    color: #ffffff;
+
+    background-image: url('./img/desktop-background.png');
+    background-position: center center;
+    background-size: cover;
+
 }
 
-.App {
-  text-align: center;
-  height:100%;
-  padding:5%;
-  background-image: url('./img/desktop-background.png');
-  background-position: center center;
-  background-size: cover;
+h4,h6 {
+  font-family: Georgia, serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  body{
+    background-image: url('./img/mobile-background.png');
+    background-position: center center;
+    background-size: cover;
+    min-width: 360px;
+  }
 }
 
 .container {
-  position: relative;
-  width: 50%;
-  height: auto;
-  max-width: 800px;
-  min-width: 300px;
-  min-height: 200px;
   margin: 0 auto;
   padding: 30px;
   background: #fff;
@@ -39,25 +43,350 @@ body {
   -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
   box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
-
 }
 
-.Text {
-  width: 50%;
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
+h1, h2, button {
+  text-transform: uppercase;
 }
 
-@media (min-width: 769px) {
+h6, p {
+  font-size: 1.2rem;
+}
+
+#subtitle {
+  margin-top: 2vh;
+}
+
+.resultText {
+  text-align: left;
+  color: #292929;
+}
+
+/* Pixel Perfect Styling */
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3, h4 {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .resultText {
+    padding: 25px;
+  }
+
+  #resultImg {
+    max-height: 150px;
+    height:20vh;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .resultImage {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -400px;
+    margin-top: -100px;
+
+  }
+
+  .resultText {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -200px;
+    margin-top: -100px;
+  }
+
   .container {
-    margin: 2.5rem auto;
+    position: absolute;
+    width: 800px;
+    height: 200px;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -400px;
+    margin-top: -100px;
+  }
+  .buttonsGroup {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -400px;
+    margin-top: 120px;
+  }
+
+  #header {
+    position: absolute;
+    width: 800px;
+
+    top: 0%;
+    left: 50%;
+
+    margin-left: -400px;
+    margin-top: 10vh;
+  }
+
+  #footer {
+    position: absolute;
+    width: 800px;
+
+    top: 100%;
+    left: 50%;
+
+    margin-left: -400px;
+    margin-top: -120px;
+  }
+
+  .logo {
+    height: 2.7rem;
+    width: auto;
   }
 }
 
-/* Result Component */
-.result {
-  padding: 1.5rem 2.5rem;
+/* Tablet */
+
+@media (min-width: 640px) and (max-width: 992px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3, h4 {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .resultText {
+    padding: 40px;
+  }
+
+  #resultImg {
+    max-height: 160px;
+    height:20vh;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .resultImage {
+    position: absolute;
+    width: 20%;
+    height: 30vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -15vh;
+
+  }
+
+  .resultText {
+    position: absolute;
+    width: 60%;
+    height: 30vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -10%;
+    margin-top: -15vh;
+  }
+
+  .container {
+    position: absolute;
+    width: 80%;
+    height: 30vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -15vh;
+  }
+  .buttonsGroup {
+    position: absolute;
+    width: 80%;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 17vh;
+  }
+
+  #header {
+    position: absolute;
+    width: 80%;
+
+    top: 0%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 10vh;
+  }
+
+  #footer {
+    position: absolute;
+    width: 80%;
+
+    top: 100%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -15vh;
+  }
+  .logo {
+    height: 2.1rem;
+    width: auto;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3, h4 {
+    font-size: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  h6, p {
+    font-size: 1rem;
+  }
+
+  .resultText {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #resultImg {
+    max-height: 160px;
+    height:20vh;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .resultImage {
+    position: absolute;
+    width: 200px;
+    height: 20vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -100px;
+    margin-top: -18vh;
+
+  }
+
+  .resultText {
+    position: absolute;
+    width: 80%;
+    height: 18vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 2vh;
+  }
+
+  .container {
+    position: absolute;
+    width: 80%;
+    height: 40vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -20vh;
+  }
+  .buttonsGroup {
+    position: absolute;
+    width: 80%;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 22vh;
+  }
+
+  #header {
+    position: absolute;
+    width: 80%;
+
+    top: 0%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 4vh;
+  }
+
+  #footer {
+    position: absolute;
+    width: 80%;
+
+    top: 100%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -12.5vh;
+  }
+
+  .logo {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  .buttonsGroup button {
+    font-size: 1rem;
+  }
+
+  #share-btn {
+    display: none;
+  }
 }
 
 /* Quiz Component */
@@ -67,17 +396,15 @@ body {
   list-style: none;
 }
 
-/* QuestionCount Component */
-.questionCount {
-  padding: 1.5rem 2.5rem 0;
-  font-size: 14px;
-}
-
 /* Question Component */
 .question {
-  margin: 0;
-  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  margin: 0 auto;
   color: #db2f36;
+}
+
+.questionParent {
+  width:100%;
+  text-align: center;
 }
 
 /* AnswerOption Component */
@@ -85,53 +412,56 @@ body {
   border-top: 1px solid #eee;
 }
 
-.answerOption:hover {
+.answerOption:hover, .answerOption a:hover {
   background-color: #eefbfe;
 }
 
-.radioCustomButton {
-    position: absolute;
-    width: auto;
-    opacity: 0;
+.btn{
+  margin: 20px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+  padding: 5px 20px;
+  min-width: 80px;
+  text-transform: uppercase;
 }
 
-.radioCustomButton,
-.radioCustomLabel {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
+.result-btn {
+  padding: 5px 20px;
+  margin: 20px;
+  min-width: 80px;
 }
 
-.radioCustomLabel {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 1.5rem 2.5rem 1.5rem 5rem;
-    font-size: 16px;
-    line-height: 1.5;
+.result-btn a, .result-btn {
+  text-decoration: none;
+  color: #db2f36;
 }
 
-.radioCustomButton ~ .radioCustomLabel:before {
-    position: absolute;
-    top: 20px;
-    left: 38px;
-    width: 28px;
-    height: 28px;
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    background: #fff;
-    border: 1px solid #bbb;
-    border-radius: 50%;
-    transition: all 0.3s;
+.result-btn a:hover, .result-btn:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.radioCustomButton:checked ~ .radioCustomLabel:before {
-    content: '';
-    background: #8BC53F url(./svg/icon-check.svg) no-repeat;
-    background-size: 27px;
-    border-color: #8BC53F;
+.btn-outline-primary {
+  border-width: 3px;
 }
+
+#Gift, #Start {
+  background-color: #db2f36;
+  color: #ffffff;
+  border-color: #db2f36;
+  border-width: 3px;
+}
+
+#Gift:hover, #Start:hover {
+  background-color: #d8555b;
+  color: #ffffff;
+  border-color: #d8555b;
+  border-width: 3px;
+}
+
+
 
 /* Animation */
 .fade-enter {
@@ -145,9 +475,10 @@ body {
 
 .fade-leave {
     position: absolute;
-    top: 0;
+    top: 35%;
     left: 0;
     width: 100%;
+    height: 200px;
     opacity: 1;
 }
 

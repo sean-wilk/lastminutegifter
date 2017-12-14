@@ -22,7 +22,13 @@ class App extends Component {
       question: '',
       answerOptions: [],
       answer: '',
+      answersCount: {
+        Nintendo: 0,
+        Microsoft: 0,
+        Sony: 0
+      },
       result: '',
+      resultCopy:'',
       resultImage: '',
       resultLink: '',
       resultOptions:[],
@@ -90,15 +96,15 @@ class App extends Component {
 
    setResults (result) {
      if (this.state.under20Flag === 1) {
-       console.log(this.state.resultOptions[0].image)
        this.setState({ resultImage: this.state.resultOptions[0].image });
        this.setState({ resultLink: this.state.resultOptions[0].link });
        this.setState({ result: this.state.resultOptions[0].item });
+       this.setState({ resultCopy: this.state.resultOptions[0].description });
      } else {
-       console.log(this.state.resultOptions[1].image)
        this.setState({ resultImage: this.state.resultOptions[1].image });
        this.setState({ resultLink: this.state.resultOptions[1].link });
        this.setState({ result: this.state.resultOptions[1].item });
+       this.setState({ resultCopy: this.state.resultOptions[1].description });
      };
    }
 
@@ -138,21 +144,21 @@ class App extends Component {
 
   renderResult() {
     return (
-      <Result quizResult={this.state.result} imgSrc={this.state.resultImage} shopLink={this.state.resultLink } />
+      <Result quizResult={this.state.result} imgSrc={this.state.resultImage} shopLink={this.state.resultLink } resultDescription={this.state.resultCopy}/>
     );
   }
 
   render() {
       return (
         <div className="App">
-          <div>
-            <div className="Text"><h1 className="display-4">LAST MINUTE GIFTER</h1></div>
-            <div className="Text"><h4>For when you put off buying for your office gift exchange until the last possible second.</h4></div>
+          <div id="header">
+            <div id="title"><h1>LAST MINUTE GIFTER</h1></div>
+            <div id="subtitle"><h4>For when you put off buying for your office gift exchange until the last possible second.</h4></div>
           </div>
-          <div>
+          <div className="row">
             {this.state.result ? this.renderResult() : this.renderQuiz()}
           </div>
-          <div>
+          <div id="footer">
             <div className="Text"><h6 className="text-muted">We hope you have amazon prime. Love from,</h6></div>
             <div className="Text"><img src={logo} className="logo" alt="logo" /></div>
           </div>

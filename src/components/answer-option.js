@@ -3,21 +3,17 @@ import PropTypes from 'prop-types';
 
   function AnswerOption(props) {
     return (
-      <li className="btn btn-outline-primary">
-        <input
-          type="radio"
-          className="radioCustomButton"
+        <button
+          type="button"
+          className="btn btn-outline-primary btn-lg"
           name="radioGroup"
           checked={props.answerType === props.answer}
           id={props.answerType}
           value={props.answerType}
           disabled={props.answer}
-          onChange={props.onAnswerSelected}
-        />
-        <label className="radioCustomLabel" htmlFor={props.answerType}>
+          onClick={props.onAnswerSelected} >
           {props.answerContent}
-        </label>
-      </li>
+        </button>
     );
   }
 

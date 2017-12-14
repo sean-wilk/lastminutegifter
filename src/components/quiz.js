@@ -23,20 +23,20 @@ function Quiz(props) {
       return (
        <div>
          <ReactCSSTransitionGroup
-           className="container"
+           className="container row align-items-center"
            component="div"
            transitionName="fade"
-           transitionEnterTimeout={800}
-           transitionLeaveTimeout={500}
+           transitionEnterTimeout={1000}
+           transitionLeaveTimeout={1000}
            transitionAppear
-           transitionAppearTimeout={500}
-         >
-           <div key={props.questionId}>
-             <Question content={props.question} />
-           </div>
-         </ReactCSSTransitionGroup>
+           transitionAppearTimeout={1000}>
 
-         <div>
+            <div key={props.questionId} className="questionParent">
+              <Question content={props.question} />
+            </div>
+
+          </ReactCSSTransitionGroup>
+         <div className="buttonsGroup">
            <ul className="answerOptions">
              {props.answerOptions.map(renderAnswerOptions)}
            </ul>
