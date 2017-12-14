@@ -13,8 +13,14 @@ class App extends Component {
     constructor(props) {
     super(props);
 
-    var cloneArray = quizQuestions.slice();
-    cloneArray.splice(0,1);
+    var cloneArray = quizQuestions.slice(2);
+    var randomArray = this.shuffleArray(cloneArray)
+    var joinedArray = quizQuestions.slice(0,2).concat(this.shuffleArray(cloneArray))
+
+    console.log(cloneArray)
+    console.log(randomArray)
+    console.log(quizQuestions.slice(0,2))
+    console.log(joinedArray)
 
     this.state = {
       counter: 0,
@@ -34,7 +40,7 @@ class App extends Component {
       resultOptions:[],
       under20Flag: 0,
       over20Flag: 0,
-      randomQuestions: this.shuffleArray(cloneArray)
+      randomQuestions: joinedArray
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
@@ -84,12 +90,13 @@ class App extends Component {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
 
+
     this.setState({
       counter: counter,
       questionId: questionId,
-      question: this.state.randomQuestions[counter-1].question,
-      answerOptions: this.state.randomQuestions[counter-1].answers,
-      resultOptions: this.state.randomQuestions[counter-1].result,
+      question: this.state.randomQuestions[counter].question,
+      answerOptions: this.state.randomQuestions[counter].answers,
+      resultOptions: this.state.randomQuestions[counter].result,
       answer: ''
     });
   }

@@ -21,6 +21,28 @@ import image20 from '../img/test.png';
 
 var quizQuestions = [
   {
+      question: "Let's Get This Over With",
+      answers: [
+          {
+              type: "Start",
+              content: "Start"
+          }
+      ],
+      result: [
+        {
+          type: "",
+          image: "",
+          link: "",
+          item: ""
+        },
+        {
+          type: "",
+          image: "",
+          link: "",
+          item: ""
+        }
+      ]
+  },{
       question: "Spending Limit?",
       answers: [
           {
