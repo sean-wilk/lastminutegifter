@@ -10,31 +10,25 @@ function Result(props) {
 
   return (
     <div>
-      <ReactCSSTransitionGroup
-        className="container result"
-        component="div"
-        transitionName="fade"
-        transitionEnterTimeout={800}
-        transitionLeaveTimeout={500}
-        transitionAppear
-        transitionAppearTimeout={500}
-      >
+      <div className="whiteBox result">
         <div className="resultImage row align-items-center">
           {console.log(props.imgSrc)}
           <img id="resultImg" src={props.imgSrc} alt={props.quizResult}></img>
         </div>
         <div className="resultText">
-          <h2><strong>{props.quizResult}</strong></h2>
-          <p>{props.resultDescription}</p>
+          <div className="resultCopy">
+            <h3>{props.quizResult}</h3>
+            <p>{props.resultDescription}</p>
+          </div>
         </div>
-      </ReactCSSTransitionGroup>
+      </div>
       <div className="buttonsGroup">
         <button
           type="button"
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
           id="buy-btn">
-          <a href={props.shopLink} target="_blank">Buy</a>
+          <a href={props.shopLink} target="_blank">Buy Now</a>
         </button>
         <button
           type="button"
@@ -49,7 +43,7 @@ function Result(props) {
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
           id="share-btn">
-          Share
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://secretsanta.barkernyc.com/" target="_blank">Share This Quiz</a>
         </button>
       </div>
     </div>
@@ -59,7 +53,7 @@ function Result(props) {
 Result.propTypes = {
   quizResult: PropTypes.string.isRequired,
   resultDescription: PropTypes.string.isRequired,
-  imgSrc: PropTypes.object.isRequired,
+  imgSrc: PropTypes.string.isRequired,
   shopLink: PropTypes.string.isRequired
 };
 

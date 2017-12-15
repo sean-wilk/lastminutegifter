@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
     return (
         <button
           type="button"
-          className="btn btn-outline-primary btn-lg"
+          className="btn btn-outline-primary btn-lg answer-btn"
           name="radioGroup"
           checked={props.answerType === props.answer}
           id={props.answerType}

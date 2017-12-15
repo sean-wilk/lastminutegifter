@@ -22,25 +22,14 @@ function Quiz(props) {
 
       return (
        <div>
-         <ReactCSSTransitionGroup
-           className="container row align-items-center"
-           component="div"
-           transitionName="fade"
-           transitionEnterTimeout={1000}
-           transitionLeaveTimeout={1000}
-           transitionAppear
-           transitionAppearTimeout={1000}>
-
+          <div class="whiteBox row align-items-center">
             <div key={props.questionId} className="questionParent">
               <Question content={props.question} />
             </div>
-
-          </ReactCSSTransitionGroup>
-         <div className="buttonsGroup">
-           <ul className="answerOptions">
-             {props.answerOptions.map(renderAnswerOptions)}
-           </ul>
-         </div>
+          </div>
+          <div className="buttonsGroup">
+            {props.answerOptions.map(renderAnswerOptions)}
+          </div>
        </div>
      );
   }
@@ -48,7 +37,6 @@ function Quiz(props) {
   Quiz.propTypes = {
     answer: PropTypes.string.isRequired,
     answerOptions: PropTypes.array.isRequired,
-    counter: PropTypes.number.isRequired,
     question: PropTypes.string.isRequired,
     questionId: PropTypes.number.isRequired,
     questionTotal: PropTypes.number.isRequired,

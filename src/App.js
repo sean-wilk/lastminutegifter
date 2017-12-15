@@ -13,14 +13,14 @@ class App extends Component {
     constructor(props) {
     super(props);
 
-    var cloneArray = quizQuestions.slice(2);
-    var randomArray = this.shuffleArray(cloneArray)
-    var joinedArray = quizQuestions.slice(0,2).concat(this.shuffleArray(cloneArray))
+    const randomStart = 2;
+    const randomEnd = 12;
 
-    console.log(cloneArray)
-    console.log(randomArray)
-    console.log(quizQuestions.slice(0,2))
-    console.log(joinedArray)
+    var questionsArray = quizQuestions.slice(randomStart,randomEnd);
+    var randomQuestions = this.shuffleArray(questionsArray);
+    var noAnswerEndings = quizQuestions.slice(randomEnd);
+    var randomEndings = this.shuffleArray(noAnswerEndings);
+    var joinedArray = quizQuestions.slice(0,randomStart).concat(randomQuestions,randomEndings);
 
     this.state = {
       counter: 0,
@@ -120,7 +120,8 @@ class App extends Component {
     if (event.currentTarget.value === 'Gift') {
         setTimeout(() => this.setResults(this.state.resultOptions), 300);
 
-      } else if (this.state.questionId === quizQuestions.length) {
+      } else if (this.state.questionId === 12) {
+        setTimeout(() => this.setNextQuestion(), 300);
         setTimeout(() => this.setResults(this.state.resultOptions), 300);
 
       }else if (event.currentTarget.value === 'Under20') {
@@ -159,15 +160,15 @@ class App extends Component {
       return (
         <div className="App">
           <div id="header">
-            <div id="title"><h1>LAST MINUTE GIFTER</h1></div>
-            <div id="subtitle"><h4>For when you put off buying for your office gift exchange until the last possible second.</h4></div>
+            <div id="title"><h1>Last Minute Gifter</h1></div>
+            <div id="subtitle"><h6>For when you put off buying for your office gift exchange until the last possible second.</h6></div>
           </div>
           <div className="row">
             {this.state.result ? this.renderResult() : this.renderQuiz()}
           </div>
           <div id="footer">
             <div className="Text"><h6 className="text-muted">We hope you have amazon prime. Love from,</h6></div>
-            <div className="Text"><img src={logo} className="logo" alt="logo" /></div>
+            <div className="Text"><a href="https://barkernyc.com/" target="_blank"><img src={logo} className="logo" alt="logo"/></a></div>
           </div>
         </div>
       )

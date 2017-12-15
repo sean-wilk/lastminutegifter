@@ -1,23 +1,25 @@
-import image1 from '../img/test.png';
-import image2 from '../img/test2.jpg';
-import image3 from '../img/test.png';
-import image4 from '../img/test.png';
-import image5 from '../img/test.png';
-import image6 from '../img/test.png';
-import image7 from '../img/test.png';
-import image8 from '../img/test.png';
-import image9 from '../img/test.png';
-import image10 from '../img/test.png';
-import image11 from '../img/test.png';
-import image12 from '../img/test.png';
-import image13 from '../img/test.png';
-import image14 from '../img/test.png';
-import image15 from '../img/test.png';
-import image16 from '../img/test.png';
-import image17 from '../img/test.png';
-import image18 from '../img/test.png';
-import image19 from '../img/test.png';
-import image20 from '../img/test.png';
+import image1 from '../img/Image1.png';
+import image2 from '../img/Image2.png';
+import image3 from '../img/Image3.png';
+import image4 from '../img/Image4.png';
+import image5 from '../img/Image5.png';
+import image6 from '../img/Image6.png';
+import image7 from '../img/Image7.png';
+import image8 from '../img/Image8.png';
+import image9 from '../img/Image9.png';
+import image10 from '../img/Image10.png';
+import image11 from '../img/Image11.png';
+import image12 from '../img/Image12.png';
+import image13 from '../img/Image13.png';
+import image14 from '../img/Image14.png';
+import image15 from '../img/Image15.png';
+import image16 from '../img/Image16.png';
+import image17 from '../img/Image17.png';
+import image18 from '../img/Image18.png';
+import image19 from '../img/Image19.png';
+import image20 from '../img/Image20.png';
+import image21 from '../img/Image21.png';
+import image22 from '../img/Image22.png';
 
 var quizQuestions = [
   {
@@ -288,15 +290,15 @@ var quizQuestions = [
         {
           type: "Under20",
           image: image15,
-          link: "https://www.amazon.com/Warehouse-151-Custom-Enamel-Lapel/dp/B076NXDS57/ref=sr_1_1_sspa?s=apparel&rps=1&ie=UTF8&qid=1513210528&sr=1-1-spons&nodeID=7141123011&psd=1&keywords=pepe&refinements=p_85%3A2470955011&psc=1",
-          item: "Wear Pepe with Pride",
-          description: "Because they like memes and you want everyone to know it."
+          link: "https://www.amazon.com/CreepyParty-Deluxe-Novelty-Halloween-Costume/dp/B017OZL1CY/ref=sr_1_1?s=apparel&ie=UTF8&qid=1513279748&sr=1-1&nodeID=7141123011&psd=1&keywords=doge+mask",
+          item: "Much Wow",
+          description: "Because they like memes and you want everyone to know it with this completely useless gift."
         },
         {
           type: "Over20",
           image: image16,
-          link: "https://www.amazon.com/Euge-Hysteria-Sleeves-Pullover-Sweatshirt/dp/B07796G5VV/ref=pd_d0_recs_v2_nib_193_2?_encoding=UTF8&pd_rd_i=B07796G5VV&pd_rd_r=BPNFT3N9VMWSVY1VJG2A&pd_rd_w=G01Z8&pd_rd_wg=HaTSU&refRID=BPNFT3N9VMWSVY1VJG2A",
-          item: "Wear Pepe with Pride",
+          link: "https://www.amazon.com/Christmas-Sweater-Black-Adult-Sweatshirt/dp/B016YPYV9U",
+          item: "Much Wow",
           description: "Because they like memes and you want everyone to know it."
         }
       ]
@@ -358,7 +360,47 @@ var quizQuestions = [
           description: "Pinning it to The Man 24/7"
         }
       ]
-  }
-];
+  },
+        {
+            question: "-",
+            answers: [],
+            result: [
+              {
+                type: "Under20",
+                image: image21,
+                link: "https://www.amazon.com/Chia-0090710906-Kitten/dp/B000WJ55MW/ref=sr_1_2_sspa?ie=UTF8&qid=1513010623&sr=8-2-spons&keywords=chia+pet&psc=1",
+                item: "We've run out of questions, like you've run out of hope.",
+                description: "Sounds like you don't know this person very well. It's impossible to hate a Chia Pet."
+              },
+              {
+                type: "Over20",
+                image: image21,
+                link: "https://www.amazon.com/Chia-0090710906-Kitten/dp/B000WJ55MW/ref=sr_1_2_sspa?ie=UTF8&qid=1513010623&sr=8-2-spons&keywords=chia+pet&psc=1",
+                item: "We've run out of questions, like you've run out of hope.",
+                description: "Sounds like you don't know this person very well. It's impossible to hate a Chia Pet."
+              }
+            ]
+        },
+        {
+            question: "-",
+            answers: [],
+            result: [
+              {
+                type: "Under20",
+                image: image22,
+                link: "https://www.amazon.com/Lump-Coal-Glacial-Blue-Gift/dp/B00R28HW8Q/ref=sr_1_2_sspa?ie=UTF8&qid=1513010639&sr=8-2-spons&keywords=lump+of+coal&psc=1",
+                item: "We've run out of questions, like you've run out of hope.",
+                description: "You don't know them very well, but let's just assume they're on the naughty list."
+              },
+              {
+                type: "Over20",
+                image: image22,
+                link: "https://www.amazon.com/Lump-Coal-Glacial-Blue-Gift/dp/B00R28HW8Q/ref=sr_1_2_sspa?ie=UTF8&qid=1513010639&sr=8-2-spons&keywords=lump+of+coal&psc=1",
+                item: "We've run out of questions, like you've run out of hope.",
+                description: "You don't know them very well, but let's just assume they're on the naughty list."
+              }
+            ]
+        }
+      ];
 
 export default quizQuestions;

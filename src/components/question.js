@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
  function Question(props) {
    return (
@@ -7,8 +7,8 @@ import PropTypes from 'prop-types';
    );
  }
 
- Question.PropTypes = {
-   content: PropTypes.string.isRequired
+ Question.propTypes = {
+   content: propTypes.string.isRequired
  };
 
  export default Question;
