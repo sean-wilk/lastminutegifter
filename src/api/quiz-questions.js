@@ -321,7 +321,7 @@ var quizQuestions = [
           image: image17,
           link: "https://www.amazon.com/Telescopic-Extendable-Barbecue-Toasting-Dessert/dp/B01MY6DJLE/ref=sr_1_4?s=home-garden&ie=UTF8&qid=1513211215&sr=1-4&keywords=long+fork",
           item: "They won't even have to leave their desk",
-          description: '"According to the only amazon review your Secret Santa will , "Enjoy Eating Again"'
+          description: 'According to the only amazon review your Secret Santa will  , "Enjoy Eating Again"'
         },
         {
           type: "Over20",

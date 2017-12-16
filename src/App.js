@@ -167,8 +167,8 @@ class App extends Component {
             {this.state.result ? this.renderResult() : this.renderQuiz()}
           </div>
           <div id="footer">
-            <div className="Text"><h6 className="text-muted">We hope you have amazon prime. Love from,</h6></div>
-            <div className="Text"><a href="https://barkernyc.com/" target="_blank"><img src={logo} className="logo" alt="logo"/></a></div>
+            <div className="Text"><h6 className="text-muted">We hope you have Amazon Prime. With love from...</h6></div>
+            <div className="Text"><a href="https://barkernyc.com/" target="_blank" rel="noopener noreferrer"><img src={logo} className="logo" alt="logo"/></a></div>
           </div>
         </div>
       )

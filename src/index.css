@@ -47,8 +47,14 @@ h2, button {
   font-weight: bold;
 }
 
-h3 {
+h1, h3 {
   font-weight: bold;
+}
+
+button a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .resultText {
@@ -116,12 +122,16 @@ body {
   padding: 30px;
   background: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.2);
 }
 
 /*** Button Styling ***/
+
+button:hover {
+  cursor: pointer;
+}
 
 .btn{
   padding: 5px 20px;
@@ -149,8 +159,7 @@ body {
   color: #db2f36;
 }
 
-.result-btn a:hover, .result-btn:hover {
-  text-decoration: none;
+.result-btn:hover {
   color: #ffffff;
 }
 
@@ -161,10 +170,6 @@ body {
 #share-btn {
   font-size: 0.9rem;
   padding:5px;
-}
-
-#share-btn:hover a{
-  color: #ffffff;
 }
 
 #Gift, #Start, #buy-btn {
@@ -416,7 +421,7 @@ body {
 
   h3, h4 {
     font-size: 1.2rem;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -531,34 +536,22 @@ body {
 
 /*** Animation ***/
 
-.fade-enter {
-    opacity: 0;
-}
 
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out 0.3s;
+.text-enter {
+  opacity: 0;
+  transform: translate(-20%);
 }
-
-.fade-leave {
-    position: absolute;
-    top: 35%;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    opacity: 1;
+.text-enter.text-enter-active {
+  opacity: 1;
+  transform: translate(0%);
+  transition: all 500ms ease-out;
+  transition-delay: 100ms;
 }
-
-.fade-leave.fade-leave-active {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.text-leave {
+  opacity: 1;
+  transform: translate(0%);
 }
-
-.fade-appear {
-    opacity: 0;
-}
-
-.fade-appear.fade-appear-active {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+.text-leave.text-leave-active {
+  opacity: 0;
+  transition: all 1ms ease-in;
 }

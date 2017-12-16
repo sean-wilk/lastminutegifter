@@ -22,11 +22,18 @@ function Quiz(props) {
 
       return (
        <div>
-          <div class="whiteBox row align-items-center">
+         <ReactCSSTransitionGroup
+         className="whiteBox row align-items-center"
+         component="div"
+         transitionName="text"
+         transitionEnterTimeout={600}
+         transitionLeaveTimeout={10}
+         stagger={true}
+         >
             <div key={props.questionId} className="questionParent">
               <Question content={props.question} />
             </div>
-          </div>
+          </ReactCSSTransitionGroup>
           <div className="buttonsGroup">
             {props.answerOptions.map(renderAnswerOptions)}
           </div>

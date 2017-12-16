@@ -6,11 +6,21 @@ function refreshPage(){
     window.location.reload();
 }
 
+function handleSearch(url) {
+   window.open(url, "_blank");
+ }
+
 function Result(props) {
 
   return (
     <div>
-      <div className="whiteBox result">
+      <ReactCSSTransitionGroup
+        className="whiteBox row align-items-center"
+        component="div"
+        transitionName="text"
+        transitionEnterTimeout={600}
+        transitionLeaveTimeout={10}
+        >
         <div className="resultImage row align-items-center">
           {console.log(props.imgSrc)}
           <img id="resultImg" src={props.imgSrc} alt={props.quizResult}></img>
@@ -21,14 +31,16 @@ function Result(props) {
             <p>{props.resultDescription}</p>
           </div>
         </div>
-      </div>
+      </ReactCSSTransitionGroup>
       <div className="buttonsGroup">
         <button
           type="button"
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
-          id="buy-btn">
-          <a href={props.shopLink} target="_blank">Buy Now</a>
+          id="buy-btn"
+          formtarget="_blank"
+          onClick={() => handleSearch(props.shopLink)}>
+          Buy Now
         </button>
         <button
           type="button"
@@ -42,8 +54,10 @@ function Result(props) {
           type="button"
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
-          id="share-btn">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=http://secretsanta.barkernyc.com/" target="_blank">Share This Quiz</a>
+          id="share-btn"
+          formtarget="_blank"
+          onClick={() => handleSearch('https://www.facebook.com/sharer/sharer.php?u=http://secretsanta.barkernyc.com/')}>
+          Share This Quiz
         </button>
       </div>
     </div>
