@@ -28,7 +28,6 @@ function Quiz(props) {
          transitionName="text"
          transitionEnterTimeout={600}
          transitionLeaveTimeout={10}
-         stagger={true}
          >
             <div key={props.questionId} className="questionParent">
               <Question content={props.question} />
