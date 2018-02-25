@@ -118,7 +118,7 @@ var quizQuestions = [
           image: image3,
           link: "https://www.amazon.com/Silent-Vibrating-Personal-Alarm-Shake-N-Wake/dp/B0027A573Q/ref=sr_1_1?s=home-garden&ie=UTF8&qid=1513212700&sr=1-1&keywords=shock+alarm",
           item: "A completely worthless gift",
-          description: "The most passive agreesive way to tall your secret santa you need to show up to their meetings on time."
+          description: "The most passive aggressive way to tell your secret santa they need to show up to meetings on time."
         },
         {
           type: "Over20",
@@ -241,7 +241,7 @@ var quizQuestions = [
           image: image12,
           link: "https://www.amazon.com/Artland-67008A-Pedestal-Beverage-Jar/dp/B001CS4T1A/ref=sr_1_40?s=home-garden&ie=UTF8&qid=1513269618&sr=1-40&keywords=countertop+water+jug",
           item: "Artisinal Hydration System for Their Desk",
-          description: "Throw in some free-range, organic, artisinal cucumbers to take their water game to the next level."
+          description: "Throw in some free-range, organic cucumbers to take their water game to the next level."
         }
       ]
   },
@@ -321,7 +321,7 @@ var quizQuestions = [
           image: image17,
           link: "https://www.amazon.com/Telescopic-Extendable-Barbecue-Toasting-Dessert/dp/B01MY6DJLE/ref=sr_1_4?s=home-garden&ie=UTF8&qid=1513211215&sr=1-4&keywords=long+fork",
           item: "They won't even have to leave their desk",
-          description: 'According to the only amazon review your Secret Santa will  , "Enjoy Eating Again"'
+          description: 'According to the only Amazon review your Secret Santa will "Enjoy Eating Again".'
         },
         {
           type: "Over20",
@@ -357,7 +357,7 @@ var quizQuestions = [
           image: image20,
           link: "https://shop.the-wing.com/products/no-days-off-pins",
           item: "No Days Off",
-          description: "Pinning it to The Man 24/7"
+          description: "Pinning it to The Man 24/7."
         }
       ]
   },

@@ -161,7 +161,7 @@ class App extends Component {
         <div className="App">
           <div id="header">
             <div id="title"><h1>Last Minute Gifter</h1></div>
-            <div id="subtitle"><h6>For when you put off buying for your office gift exchange until the last possible second.</h6></div>
+            <div id="subtitle"><h6>Put off buying for your office gift exchange until the last minute? We've got you covered.</h6></div>
           </div>
           <div className="row">
             {this.state.result ? this.renderResult() : this.renderQuiz()}

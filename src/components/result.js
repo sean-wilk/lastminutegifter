@@ -53,7 +53,7 @@ function Result(props) {
           className="btn btn-outline-primary btn-lg result-btn"
           name="radioGroup"
           id="share-btn"
-          onClick={() => handleSearch('https://www.facebook.com/sharer/sharer.php?u=http://secretsanta.barkernyc.com/')}>
+          onClick={() => handleSearch('https://www.facebook.com/sharer/sharer.php?u=http://lastminutegifter.barkernyc.com/')}>
           Share This Quiz
         </button>
       </div>

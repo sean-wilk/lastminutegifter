@@ -105,6 +105,7 @@ body {
     background-image: url('./img/desktop-background.png');
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -301,7 +302,7 @@ button:hover {
 
 /* Tablet */
 
-@media (min-width: 640px) and (max-width: 992px) {
+@media (min-width: 640px) and (max-width: 992px) and (min-height:60vw) {
 
   h1 {
     font-size: 3rem;
@@ -318,10 +319,6 @@ button:hover {
 
   h6 {
     max-width: 500px;
-  }
-
-  .resultCopy {
-    padding: 0;
   }
 
   #resultImg {
@@ -409,7 +406,7 @@ button:hover {
 
 /* Mobile */
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (min-height:60vw) {
 
   h1 {
     font-size: 2.2rem;
@@ -437,7 +434,7 @@ button:hover {
     width:100%;
     height:100%;
     text-align: center;
-    padding:20px;
+    padding:5px;
   }
 
   #resultImg {
@@ -504,7 +501,7 @@ button:hover {
     left: 50%;
 
     margin-left: -40%;
-    margin-top: 8vh;
+    margin-top: 4vh;
   }
 
   #footer {
@@ -534,12 +531,116 @@ button:hover {
   }
 }
 
+@media (max-width: 992px) and (max-height:60vw) {
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3, h4 {
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  h6, p {
+    font-size: 1rem;
+  }
+
+  #resultImg {
+    max-height: 100%;
+    max-width: 100%;
+    height:100%;
+    width: auto;
+    margin: 0 auto;
+    padding:0 20px;
+  }
+
+  .resultImage {
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -50%;
+    margin-top: -25vh;
+
+  }
+
+  .resultText {
+    position: absolute;
+    width: 60%;
+    height: 50vh;
+
+    top: 50%;
+    left: 50%;
+
+    margin-left: -10%;
+    margin-top: -25vh;
+  }
+
+  .whiteBox {
+    position: absolute;
+    width: 80%;
+    height: 50vh;
+
+    top: 70%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -25vh;
+  }
+  .buttonsGroup {
+    position: absolute;
+    width: 100%;
+
+    top: 70%;
+    left: 50%;
+
+    margin-left: -50%;
+    margin-top: 25vh;
+  }
+
+  #header {
+    position: absolute;
+    width: 80%;
+
+    top: 0%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: 12vh;
+  }
+
+  #footer {
+    position: absolute;
+    width: 80%;
+
+    top: 140%;
+    left: 50%;
+
+    margin-left: -40%;
+    margin-top: -18vh;
+    margin-bottom: 5vh;
+  }
+  .logo {
+    height: 2.1rem;
+    width: auto;
+  }
+}
+
 /*** Animation ***/
 
 
 .text-enter {
   opacity: 0;
-  transform: translate(-20%);
+  transform: translate(-10%);
 }
 .text-enter.text-enter-active {
   opacity: 1;
